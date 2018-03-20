@@ -1,0 +1,805 @@
+    body{
+        font-family: lato-regular, sans-serif; 
+        font-size: 14px;
+        color: #010204;
+        overflow-x: hidden;
+    }
+
+    .container-fluid {
+        padding-right:0;
+        padding-left:0;
+        margin-right:auto;
+        margin-left:auto
+     }
+
+    a{
+        font-family: lato-regular, sans-serif;
+        color: #010204;
+        transition: all .1s ease;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: #1374F2;    
+        transition: all .1s ease;
+    }
+
+    p{
+        font-family: lato-regular, sans-serif; 
+        line-height: 1.250em;
+    }
+
+    h1{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 2.786em;
+        line-height: 3.500em;
+    }
+
+    h2{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 2.143em;
+        line-height: 1.100em;
+    }
+
+    h3{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 2.000em;
+        line-height: 2.500em;
+    }
+
+    h4{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 1.125em;
+        line-height: 1.188em;
+    }
+
+    h5{
+        font-family: lato-black, sans-serif; 
+        font-size: 1.875em;
+        line-height: 2.063em;
+        text-transform: uppercase;
+    }
+
+    h6{
+        font-family: lato-black, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        line-height: 1.250em;
+    }   
+
+    nav p{
+        font-weight: 700;
+    }
+
+    .small-nav{
+        font-weight: 400;
+        opacity: .8;
+    }
+
+    .small{
+        font-family: lato, sans-serif; 
+        font-size: 0.625em;
+        text-align: center;
+    }
+
+    p.product-text{
+        text-align: center;   
+    }
+
+    .cta-dark{
+        color: #010204;
+        border: 1px solid #010204;
+        text-transform: uppercase;
+        padding-left: 1.875em;
+        padding-right: 1.875em;
+        padding-top: 0.983em;
+        padding-bottom: 0.983em;
+        font-size: 0.813em;
+        line-height: 1.125em;
+        font-weight: 700;
+
+    }
+
+    .cta-white{
+        color: white;
+        border: 1px solid white;
+        text-transform: uppercase;
+        padding-left: 1.875em;
+        padding-right: 1.875em;
+        padding-top: 0.983em;
+        padding-bottom: 0.983em;
+        font-size: 0.813em;
+        line-height: 1.125em;
+        font-weight: 700;
+    }
+
+    .cta-white2{
+        color: white;
+        border: 1px solid white;
+        text-transform: uppercase;
+        padding-left: 1.875em;
+        padding-right: 1.875em;
+        padding-top: 0.983em;
+        padding-bottom: 0.983em;
+        font-size: 0.813em;
+        line-height: 1.125em;
+        font-weight: 700;
+    }
+
+    .cta-white2:hover{
+        color: #010204;
+    }
+
+    .cta-inline{
+        line-height: 1.250em;
+        color: #1374F2;
+        cursor: pointer;
+    }
+
+    .cta-no-border{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .short-line{
+        border-top: 1px solid #1374F2;
+        -webkit-transform:rotate(90deg);
+        width: 40px;
+        margin-bottom: 4em;
+        margin-top: 4em;
+    }
+
+    .long-line{   
+        border-top: 1px solid #1374F2;
+        -webkit-transform:rotate(90deg);
+        width: 22.571em;
+        z-index: -1;
+        margin-top: -9em;
+    }
+
+    #background{
+        z-index: -2;
+        background-color: #212224; 
+        height: 51.786em;
+    }
+
+    nav{
+        z-index: 1;  
+    }
+
+    .icon-nav{
+        width: 1.071em;
+        height: 1.071em;
+    }
+
+    #shopping-cart{ 
+        width: 1.429em;
+        height: 1.429em;
+    }
+
+    nav a{ 
+        color: white;
+    }
+
+    #logo{
+        display: block;
+        background-image: url("../images/Light_Unit-logo_white.png");
+        background-color: #212224;
+        text-indent: -9999px;
+        background-size: 100%;
+        width: 4.286em;
+        height: 4.286em;
+    }
+
+    .menu{
+        display: none;   
+    }
+
+    .nav-items{
+        color: white;
+        padding: 1em 1em 1em 0;
+        margin-left: 1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.875em;
+        position: relative;
+    }
+
+    .nav-items:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-items:after{
+        content: '';
+        position: absolute;
+        width: 0; 
+        left: 0;
+        height: 1px;
+        display: block;
+        margin-top: 0.357em;
+        background: #1374F2;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;   
+    }
+
+    .nav-items:hover:after{
+        width: 50%;
+        left: 0;
+    }
+
+    .input-group{
+        border: 1px solid white; 
+        margin-bottom: 0.3em;
+    }
+
+    .search-bar{
+        font-size: 0.813em;
+        font-weight: 100;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+    
+    .search-bar:focus{
+        background-color: transparent;
+    }
+
+    button{
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .search-icon{
+        width: 80%;
+        margin-left: 35%;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
+    #hero{    
+        margin-top: -1.2em;
+        background-image: url("../images/philips2.png");
+        background-repeat: no-repeat;
+        background-size: 97%;
+        background-position: 50% 50%;
+        height: 28.571em;
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+    }
+
+    #hero h2{
+        margin-top: 3em;
+    }
+
+    .cta-hero{    
+        margin-bottom: 12em;
+    }
+
+    .arrow-blue1{
+        margin-top: 10em;       
+    }
+
+    .arrow-blue2{
+        margin-top: 10em;   
+    }
+
+    #categories{
+        background-color: #1374F2;
+        color: white;
+        padding: 2em;
+        margin-top: -5.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 89%;
+    }
+
+    #categories h6{
+        display: none;   
+    }
+
+    #categories a{
+        color: white;   
+    }
+
+    #categories a:hover{
+        text-decoration: underline;   
+    }
+
+    #highlights{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight-item{
+        width: 22.857em;
+        height: 18.286em;
+        text-align: center;
+        margin-top: 60px;
+        color: white;
+        z-index: 1;
+    }
+
+    .highlight-item a{
+        color: white;   
+    }
+
+    .highlight-item h5{
+        margin-top: 3em;
+    }
+
+    .item1{    
+        background-image: url("../images/bohemian.png");
+        background-position: 50;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .item2{    
+        background-image: url("../images/verlichting.png");
+        background-position: 50;
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .item3{    
+        background-image: url("../images/woonkamer.png");
+        background-position: 50;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .tab-item{   
+        padding: 1em;
+    }
+
+    .tab-item a{
+        padding: 1em 1em 1em 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.875em;
+        position: relative;
+    }
+
+    .tab-item a:hover{
+        text-decoration: none;
+        color: #010204;
+    }
+
+    .tab-item a:after{
+        content: '';
+        position: absolute;
+        width: 0; 
+        left: 0;
+        height: 1px;
+        display: block;
+        margin-top: 5px;
+        background: #1374F2;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;   
+    }
+
+    .tab-item a:hover:after{
+        width: 50%;
+        left: 0;
+    }
+
+    .highlight-products{  
+        margin-top: 15em;
+        width: 68.571em;
+    }
+
+    .product-item{    
+        background-color: #FAFAFA;
+        margin-left: 0.714em;
+        margin-right: 0.714em;
+        height: 16.500em;
+        width: 10.000em;
+    }
+
+    .product-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: em;
+    }
+
+    .product-item p{   
+        margin-top: 0.714em;
+    }
+
+    .cta-products{
+        margin-top: 2em;   
+    }
+
+    .highlight{
+        width: 68.571em;
+    }
+
+    .background-highlight{    
+        height: 10.286em;
+        background-color: #212224;
+        margin-top: -18em;
+        margin-bottom: 13em;
+    }
+
+    .highlight img{
+        width: 44.286em;
+        height: 26.643em;
+        margin-left: -5.4em;
+        margin-top: 6em;
+        z-index: -1;
+    }
+
+    .highlight-box{
+        width: 27.143em;
+        height: 20.286em;
+        background-color: #1374F2;
+        z-index: 1;
+    }
+
+    .highlight h2{
+        color: white;  
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .new-products{  
+        width: 68.571em;
+    }
+
+    .new-products h2{
+        margin-bottom: 1em;   
+    }
+
+    .merken{
+        position: relative;
+        height: 14.500em;
+        background-color: #010204;
+        z-index: 2;
+    }
+
+    .merken h6{
+        color: white;
+        text-align: center;
+    }
+
+    .merken img{ 
+        width: 4.286em;   
+        margin-left: 0.714em;
+        margin-right: 0.714em;
+    }
+
+    .background-footer{
+        position: relative;
+        z-index: -1;
+        background-color: #212224;  
+        height: 35.714em;
+        margin-top: -7em;
+    }
+
+    footer{
+        position: relative;
+        z-index: 1;
+        padding-top: 13em;
+        margin-top: -40em;
+        width: 68.571em;
+        height: 39.500em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer h6, footer p{
+        color: white;
+    }
+
+    .long-footer-line{    
+        border-top: 1px solid #010204;
+    }
+
+    .short-footer-line{
+        border-top: 1px solid #010204;   
+    }
+
+@media(max-width:1000px){
+    #background{ 
+        height: 36em;
+    }
+    
+    nav{
+        width: 45.714em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .menu{
+        display: block;
+        margin-left: 19em;
+    }
+    
+    .menu img{
+        width: 1.571em;
+        height: 1.143em;
+    }
+
+    #hero{
+        background-size: 97%;
+    }
+
+    .cta-hero{    
+        margin-bottom: 10em;
+    }
+
+    .arrow-blue1{
+        margin-top: 10em;       
+    }
+
+    .arrow-blue2{
+        margin-top: 10em; 
+        margin-left: -1em;
+    }
+    
+    nav p{ 
+        color: white;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .input-group{
+        display: none;
+    }
+
+    .cart{    
+        display: none;
+    }
+
+    #categories{
+        margin-top: 0em;   
+    }
+    
+    #categories h6{
+        margin-top: 0.5em;
+        display: inline;   
+    }
+    
+    .cat{
+        display: none;
+    }
+    
+    .tab-item{   
+        display: none;
+    }
+    
+    #highlights{
+        width: 45.714em;
+    }
+
+    .highlight-products{  
+        width: 540px;
+        margin-top: 15em;
+    }
+
+    .product-item{    
+        margin-top: 1.429em;
+    }
+    
+    .highlight{
+        width: 44.286em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight img{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+    }
+
+    .highlight-box{
+        width: 44.286em;
+        height: 20.286em;
+        background-color: #1374F2;
+        z-index: 1;
+    }
+
+    .highlight h2{
+        color: white;  
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .new-products{  
+        width: 45.714em;
+    }
+
+    .new-products h2{
+        margin-bottom: 1em;   
+    }
+
+    .merken{
+        width: 45.714em;
+        height: 35.714em;
+    }
+
+    .background-footer{
+        height: 46.429em;
+    }
+
+    footer{
+        width: 45.714em;
+        height: 46.429em;
+        margin-top: -50em;
+    } 
+}
+
+@media(max-width:640px){
+    h1{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 1.714em;
+        line-height: 3.500em;
+    }
+
+    h2{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 1.643em;
+        line-height: 1.100em;
+    }
+
+    h3{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 1.286em;
+        line-height: 2.500em;
+    }
+
+    h4{
+        font-family: playfairdisplay-black, serif; 
+        font-size: 1.214em;
+        line-height: 1.188em;
+    }
+
+    h5{
+        font-family: lato-black, sans-serif; 
+        font-size: 1.429em;
+        line-height: 2.063em;
+        text-transform: uppercase;
+    }
+
+    h6{
+        font-family: lato-black, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.929em;
+        line-height: 1.250em;
+    }
+    
+    #background{ 
+        height: 25.5em;
+    }
+    
+    nav{
+        width: 22.857em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .menu{
+        display: block;
+        margin-left: 19em;
+    }
+    
+    .menu img{
+        width: 1.571em;
+        height: 1.143em;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .input-group{
+        display: none;
+    }
+
+    .cart{    
+        display: none;
+    }
+
+    #hero{
+        height: 17.143em;
+        background-size: 185%;
+    }
+
+    .cta-hero{    
+        margin-bottom: 10em;
+    }
+
+    .arrow-blue1{
+        margin-top: 7em;       
+    }
+
+    .arrow-blue2{
+        margin-top: 7em;
+        margin-left: -3em;
+    }
+    
+    #categories{
+        margin-top: 1em;   
+    }
+    
+    #categories h6{
+        margin-top: 0.5em;
+        display: inline;   
+    }
+    
+    .cat{
+        display: none;
+    }
+    
+    .tab-item{   
+        display: none;
+    }
+    
+    .highlight-item h5{
+        margin-top: 4.5em;
+    }
+
+    #highlights{
+        width: 22.143em;
+    }
+    
+    .highlight-products{  
+        width: 22.857em;
+        margin-top: 76em;
+    }
+    
+    .highlight{
+        width: 22.857em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight img{
+        width: 100%;
+        height: 100%;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight h2{
+        color: white;  
+        text-align: center;
+        margin-top: 4.5em;
+    }
+
+    .new-products{  
+        width: 22.857em;
+    }
+
+    .new-products h2{
+        margin-bottom: 0em;   
+    }
+
+    .merken{
+        width: 22.857em;
+        height: 35.714em;
+    }
+
+    .background-footer{
+        height: 60em;
+    }
+
+    footer{
+        width: 22.857em;
+        height: 60em;
+        margin-top: -60em;
+    }
+}
