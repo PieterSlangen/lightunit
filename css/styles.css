@@ -1838,7 +1838,7 @@ a {
     color: #FFFFFF; }
 
 .l-bg-blog {
-  background-image: url("../images/blog1.png"); }
+  background-image: url("../images/blog1.jpg"); }
   .l-bg-blog h1 {
     margin-top: -0.3em;
     text-align: center; }
@@ -5241,7 +5241,7 @@ a {
 
 #l-hero {
   margin-top: -0.7em;
-  background-image: url("../images/banner-dark.png");
+  background-image: url("../images/banner-dark.jpg");
   background-repeat: no-repeat;
   background-size: 97%;
   background-position: 50% 50%;
@@ -10911,14 +10911,14 @@ a {
   background-color: #212224;
   height: 13.429em;
   z-index: -2;
-  margin-top: 10em; }
+  margin-top: 15em; }
 
 .l-info-merk {
   margin-top: -17em; }
   .l-info-merk img {
     position: relative;
-    height: 100%;
-    margin-top: -30em;
+    height: 80%;
+    margin-top: -35em;
     z-index: -1;
     padding: 0; }
 
