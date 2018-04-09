@@ -1,0 +1,61 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-highlighted{    
+    position: relative;
+    margin-top: 5em;
+    z-index: 1;
+    .m-highlight1{    
+        background-image: url("../images/woonkamer2.jpg");
+    }    
+    .m-highlight2{    
+        background-image: url("../images/tuin.jpg");
+    }
+    .m-highlight3{    
+        background-image: url("../images/keuken.jpg");
+    }
+}
+
+.m-ruimtes-item{
+    display: block;
+    position: relative;
+    height: 19em;
+    color: $white;
+    background-position: 50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    a{
+        position: relative;
+        color: $white;   
+        z-index: 2;
+        @include fonts(lato-black, 1em, 1em, uppercase, center);
+        @extend %hover;
+    }
+
+    h5{
+        position: relative;
+        margin-top: 4.3em;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
+.m-overlay:before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    display: block;
+    background-color: rgba($darkgrey, 0.5);
+}
+
+@media(max-width:576px){
+    .m-ruimtes-item{
+        h5{
+            margin-top: 6em;   
+        }
+    }
+}

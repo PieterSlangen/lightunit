@@ -1,0 +1,59 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-bg-info{
+    position: relative;
+    background-color: $lightgrey;
+    height: 13.429em;
+    z-index: -2;
+    margin-top: 10em;
+}
+
+.l-info-merk{    
+    margin-top: -17em;
+    img{
+        position: relative;
+        height: 100%;
+        margin-top: -30em;
+        z-index: -1;
+        padding: 0;
+    }
+}
+
+.m-box{
+    background-color: $lightblue;
+    color: white;
+    height: 23.214em;
+    padding: 4em;
+}
+
+@media(max-width:992px){
+    .m-box{
+        height: 28em; 
+    }
+}
+
+@media(max-width:768px){
+    .l-bg-info{
+        margin-top: 20em;   
+    }
+    
+    .l-info-merk{    
+        margin-top: -33em;
+        img{
+            margin-top: 0em; 
+        }
+    }
+    
+    .m-box{
+        height: 26em; 
+    }
+}
+
+@media(max-width:576px){
+    .m-box{
+        height: 35em; 
+    }
+}

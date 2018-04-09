@@ -1,0 +1,27 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-merk{
+    border: 1px solid $lightgrey; 
+    cursor: pointer;
+    height: 11.429em;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 2.4em;
+    }
+    &:hover:before{
+        position: absolute;
+        content:"";
+        margin-top: 5%;
+        margin-left: 5%;
+        width:90%;
+        height:90%;
+        display: block;
+        background-color: rgba(19,116,242,0.7);
+    }
+}

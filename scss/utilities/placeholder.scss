@@ -1,0 +1,204 @@
+%cta{ 
+    @include fonts(lato-bold, 1em, 1.429em);
+    text-transform: uppercase;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+    padding-top: 0.983em;
+    padding-bottom: 0.983em;
+    font-size: 0.813em;
+    line-height: 1.125em;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+%nav{
+    position: relative;
+    z-index: 1;
+    
+    a{
+        @include transition(all, .1s, ease);
+        &:hover{
+            text-decoration: none;
+            @include transition(all, .1s, ease);
+        }
+    }
+    
+    #m-logo{
+        display: block;
+        text-indent: -9999px;
+        background-size: 100%;
+        width: 4.286em;
+        height: 4.286em;
+    }
+    
+    .m-nav-items{
+        padding: 1em 1em 1em 0;
+        margin-left: 1em;
+        position: relative; 
+        @include fonts(lato-bold, 0.875em, 1em, uppercase);
+        &:hover{
+            text-decoration: none;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 0;
+            left: 0;
+            height: 0.143em;
+            display: block;
+            margin-top: 0.357em;
+            @include transition(width, .2s, ease);
+        }
+        &:hover:after{
+            width: 50%;
+            left: 0;
+        }
+    }
+    
+    .input-group{
+        margin-bottom: 0.3em;
+        padding-left: 0em;
+        padding-right: 0em;
+        .search-bar{
+            @include fonts(lato-light, 0.813em, 1em);
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+        }
+        
+        .search-bar:focus{
+            background-color: transparent;
+        }
+        
+        .search-button{
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+        
+        .search-icon{
+            width: 75%;
+            margin-left: 35%;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+    
+    .l-cart-dark{
+        font-weight: 700;   
+    }
+    
+    .m-small-nav{
+        font-weight: 400;
+    }
+    
+    
+    #m-shopping-cart{ 
+        width: 1.429em;
+        height: 1.429em;
+        @include cart(url("../images/shopping-cart.svg"), 100%);
+    }  
+    
+    #m-shopping-cart-dark{ 
+        width: 1.429em;
+        height: 1.429em;
+        @include cart(url("../images/shopping-cart-dark.svg"), 100%);
+    } 
+}
+
+%nav-bg{
+    position: relative;
+    height: 25.143em;
+    background-size: cover;
+    color: $white;
+    z-index: -3;   
+}
+
+%products{
+    position: relative;
+    z-index: 1;  
+    
+    .m-bg-item{
+        height: 16.500em;
+        padding: 0.5em;
+        background-color: $offwhite;
+    }
+    
+    .m-product-item{    
+        height: 16.500em;
+        margin-bottom: 2em;
+    }
+    
+    img{
+        display: block;
+    }
+    
+    p{   
+        margin-top: 0.714em;
+        text-align: center;
+    } 
+}
+
+%hover{
+    &:hover{
+        text-decoration: underline;
+    }   
+}
+
+%select{    
+    height: 3.571em;
+    border: 0;
+    border-bottom: 1px solid $darkgrey;
+    color: $lightgrey;
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 0.929em;
+    line-height: 3.286em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em; 
+}
+
+%input{
+    border: 0;
+    border-bottom: 1px solid $darkgrey;
+    text-transform: uppercase;
+    font-size: 0.929em;
+    line-height: 3.286em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
+    &:focus{
+        color: $lightblue;
+        border: 0;
+        border-bottom: 1px solid $lightblue;
+    } 
+}
+
+%m-nav-active{
+    padding: 1em 1em 1em 0;
+    margin-left: 1em;
+    position: relative; 
+    @include fonts(lato-bold, 0.875em, 1em, uppercase);
+    &:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 0.143em;
+    display: block;
+    margin-top: 0.357em;   
+    }
+    &:hover{    
+        text-decoration: none;
+    }
+}
+
+
+
+
+

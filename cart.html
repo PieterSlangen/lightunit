@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lightunit e-shop</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="l-nav-dark container">
+            <div class="row align-items-end justify-content-between">
+                <div class="col-1">
+                    <a href="index.html" id="m-logo">logo</a>
+                </div>
+                <a class="m-menu offset-9 col-2 d-block d-md-none" href="#"><img src="images/menu-dark.svg" alt="menu"></a>
+                <div class="col-lg-8 col-md-6 d-none d-md-block">
+                    <a class="m-nav-items" href="product_overzicht.html">Producten<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="ruimtes.html">Ruimtes</a>
+                    <a class="m-nav-items" href="merken.html">Merken</a>
+                    <a class="m-nav-items" href="inspiratie.html">Inspiratie</a>
+                    <a class="m-nav-items" href="lichtadvies.html">Advies<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="contact.html">Contact</a>
+                </div>
+                <div class="col-3 d-none d-md-block">
+                    <form class="form-inline" action="">
+                        <div class="input-group col-12">
+                            <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
+                            <button class="search-button" type="submit"><img class="search-icon input-group-text" src="images/search-icon-dark.svg" alt="search-icon"></button>   
+                        </div>
+                    </form>
+                    <div class="d-none d-md-block">
+                        <div class="row justify-content-around align-items-end l-cart-dark">
+                            <a href="cart.html">€0,00</a>
+                            <a href="cart.html" class="m-small-nav">0 items</a>
+                            <a href="cart.html" id="m-shopping-cart-dark"></a>  
+                        </div>
+                    </div>
+                </div>
+                <hr class="nav-line">
+            </div>
+        </nav>
+            
+            <div class="container" aria-label="breadcrumb">
+                <ol class="breadcrumb row mx-auto">
+                    <li class="breadcrumb-item d-none d-lg-block"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Winkelmandje</li>
+                </ol>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <h6 class="offset-md-3 col-md-5 d-none d-md-block">Product</h6>
+                    <h6 class="col-md-1 d-none d-md-block">Prijs</h6>
+                    <h6 class="col-md-1 d-none d-md-block">Aantal</h6>
+                    <h6 class="col-md-1 d-none d-md-block">Totaal</h6>
+                    <hr class="col-12">
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                        <a href="#"><img src="images/close-icon.svg" alt="close-icon"></a>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-3 col-3">
+                        <img src="images/product1-resize.png" alt="product1"> 
+                    </div>
+                    <p class="col-lg-5 col-md-5 col-sm-7 offset-1 col-6">TENDO-LED - Plafonniere - LED - 1x18W 3000K - Wit</p>
+                    <p class="col-lg-1 col-md-1 col-sm-2 col-2 d-none d-md-block">€21,95</p>
+                    <input class="col-lg-1 offset-md-0 col-md-1 offset-sm-5 col-sm-2 offset-5 col-2 m-input-cart" type="text" placeholder="1">
+                    <p class="col-lg-2 col-md-2 col-sm-4 col-4">€21,95 <span class="m-small">Incl BTW</span></p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                        <a href="#"><img src="images/close-icon.svg" alt="close-icon"></a>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-3 col-3">
+                        <img src="images/product2-resize.png" alt="product1"> 
+                    </div>
+                    <p class="col-lg-5 col-md-5 col-sm-7 offset-1 col-6">APPLE LED BULB – Filament lamp</p>
+                    <p class="col-lg-1 col-md-1 col-sm-2 d-none d-md-block">€8,95</p>
+                    <input class="col-lg-1 offset-md-0 col-md-1 offset-sm-5 col-sm-2 offset-5 col-2 m-input-cart" type="text" placeholder="1">
+                    <p class="col-lg-2 col-md-2 col-sm-4 col-4">€8,95 <span class="m-small">Incl BTW</span></p>
+                </div>
+            </div>
+            
+            <div class="l-cart-bg"></div>
+            <div class="container l-cart-info">
+                <div class="row">
+                    <input class="col-md-2 col-sm-6 col-6 m-input-cart-korting" type="text" placeholder="Kortingscode">
+                    <div class="col-md-6 col-sm-6 col-6">
+                        <button class="cta-dark">Gebruik kortingscode</button>
+                    </div>
+                    <h6 class="col-md-2 col-sm-6 col-6 m-top">subtotaal</h6>
+                    <p class="m-small-cart col-md-2 col-sm-6 col-6 m-top-2">€30,90 Incl BTW</p>
+                    <hr class="offset-md-8 col-md-3 col-sm-12 col-12 l-line-cart">
+                    <h6 class="offset-md-8 col-md-2 col-sm-6 col-6">verzending</h6>
+                    <p class="m-small-cart col-md-2 col-sm-6 col-6">€12,00</p>
+                    <hr class="offset-md-8 col-md-3 col-sm-12 col-12 l-line-cart2">
+                    <h6 class="offset-md-8 col-md-2 col-sm-6 col-6">totaal</h6>
+                    <p class="col-md-2 col-sm-6 col-6">€42,90 <span class="m-small-cart">(incl €5,36 Tax)</span></p>
+                    <div class="offset-md-8 col-md-3 col-sm-6 col-6">
+                        <a href="checkout.html" class="cta-dark">Betalen</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="l-short-line">
+          
+            <div class="l-highlight-products-home2 container">
+            <h2>Voorgestelde producten</h2>
+            <div class="l-products row">
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                            <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                            <p class="m-small">€21,95 Incl BTW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product2-resize.png" alt="product2">
+                            <p>APPLE LED BULB – Filament lamp</p>
+                            <p class="m-small">€8,95 Incl BTW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product3-resize.png" alt="product3">
+                            <p>ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
+                            <p class="m-small">€52,50 Incl BTW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product4-resize.png" alt="product4">
+                            <p>ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
+                            <p class="m-small">€18,50 Incl BTW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product5-resize.png" alt="product5">
+                            <p>CHAIR OMG LL BROWN</p>
+                            <p class="m-small">€169,00 Incl BTW</p>
+                        </a>
+                    </div> 
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                    <div class="m-bg-item">
+                        <a href="product_detail.html">
+                            <img class="mx-auto" src="images/product6-resize.png" alt="product6">
+                            <p>STAR bar/tube white 2×4.5W SELV</p>
+                            <p class="m-small">€48,71 Incl BTW</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <a href="product_overzicht.html" class="cta-products mx-auto">Meer producten</a>  
+            </div>
+        </div>
+            
+            <div class="mw-100 l-background-footer-product"></div>
+        <footer class="container l-footer-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Light unit bvba</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Naamsesteenweg 158 3001 Heverlee</p>
+                    <p>Openingsuren winkel:<br>di-vr van 10:00 tot 18:00<br>za van 11:00 tot 17:00</p>
+                    <p>Btw-nummer: BE0453.774.017 IBAN BE95 4286 1350 8158 BIC KREDBEBB</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12"> 
+                    <h6>Klantendienst</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Spreek met een van onze medewerkers op <a href="contact.html" class="cta-inline">+32 16 22 41 41</a> of stuur een bericht via onze <a href="contact.html" class="cta-inline">contactpagina</a>.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Algemene info</h6>
+                    <hr class="l-short-footer-line">
+                    <a class="cta-inline" href="retourneren.html">Retourneren</a><br>
+                    <a class="cta-inline" href="retourneren.html">Bezorgen en afhalen</a><br>
+                    <a class="cta-inline" href="retourneren.html">Beschadigd artikelen ontvangen?</a><br><br>
+                    <a class="cta-inline" href="retourneren.html">Alles over onze service</a><br><br>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Gratis verzending(BE/NL)</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Gratis levering vanaf €100! Bij bestelling voor 12u00 worden stockartikelen de volgende dag geleverd (in België).</p>
+                </div>
+            </div>
+            <hr class="l-long-footer-line">
+            <div>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                    <p>© 2018 Light Unit BVBA - Alle rechten voorbehouden </p>
+                </div>
+                <div class="row">
+                    <p class="col-lg-8 col-md-8 col-sm-8 col-12">Algemene voorwaarden • Cookie policy • Privacy statement • Disclaimer</p>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <a href="#"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
+                        <a href="#"><img src="images/pinterest-icon.svg" alt="pinterest icon"></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+</body>
+</html>

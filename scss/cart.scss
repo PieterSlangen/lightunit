@@ -1,0 +1,84 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.m-input-cart{
+    border: 0;
+    border-bottom: 1px solid $darkgrey;
+    background-color: transparent;
+    margin-top: -2em;
+    text-align: center;
+}
+
+.m-input-cart-korting{
+    border: 0;
+    border-bottom: 1px solid $darkgrey;
+    background-color: transparent;
+}
+
+.m-small-cart{    
+    font-family: lato, sans-serif; 
+    font-size: 0.625em;
+}
+
+.l-cart-bg{
+    background-color: $offwhite;
+    height: 17em;
+}
+
+.l-cart-info{
+    margin-top: -14em;
+    margin-bottom: 8em;
+}
+
+.l-line-cart{
+    margin-top: -1em;   
+}
+
+.l-line-cart2{
+    margin-top: -0.3em;   
+}
+
+@media(max-width:768px){
+    .l-cart-bg{
+        height: 20em;
+    }
+
+    .l-cart-info{
+        margin-top: -18em;   
+    }
+
+    .l-line-cart{
+        margin-top: -0.3em;   
+    } 
+}
+
+@media(max-width:576px){
+    .l-cart-info{
+        padding-left: 2em;   
+        padding-right: 4em;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

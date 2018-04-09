@@ -1,0 +1,36 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.m-ruimte1{    
+    background-image: url("../images/woonkamer2.jpg");
+}
+
+.m-ruimte2{    
+    background-image: url("../images/tuin.jpg");
+}
+
+.m-ruimte3{    
+    background-image: url("../images/keuken.jpg");
+}
+
+.m-ruimte4{    
+    background-image: url("../images/bureau.jpg");
+}
+
+.m-ruimte5{    
+    background-image: url("../images/badkamer.jpg");
+}
+
+.m-ruimte6{    
+    background-image: url("../images/slaapkamer.jpg");
+}
+
+.m-ruimte7{    
+    background-image: url("../images/kinderkamer.jpg");
+}
+
+.m-ruimte8{    
+    background-image: url("../images/terras.jpg");
+}

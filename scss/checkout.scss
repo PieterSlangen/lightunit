@@ -1,0 +1,44 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-checkout{
+    input{
+        @extend %input;
+    }
+    
+    select{
+        @extend %select; 
+    }    
+    
+    input[type="checkbox"]{
+        -webkit-appearance: none;
+        border-radius: 0;
+        border: 1px solid $darkgrey;
+        height: 1.429em;
+        width: 1.429em;
+        margin-left: auto; 
+    }
+    
+    button{
+        margin-left: -1em;   
+    }
+}
+
+.m-bottom{
+    margin-bottom: 1em;
+}
+
+.m-0{
+    margin-left: 0em;   
+}
+
+.m-bottom-0{    
+    margin-bottom: -1em;
+}
+
+.m-europabank{
+    width: 6.714em;
+    height: 1.000em;
+}

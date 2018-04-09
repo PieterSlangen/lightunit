@@ -1,0 +1,117 @@
+@mixin fonts($family, $size, $line, $transform:none, $align:left){    
+    font: {    
+        family: $family;
+        size: $size;
+    }
+    line-height: $line;
+    text: {
+        transform: $transform;
+        align: $align;
+    }
+}
+
+@mixin transition($property, $time, $effect){
+    -webkit-transition: $property $time $effect;
+    -o-transition: $property $time $effect;
+    -moz-transition: $property $time $effect;
+    transition: $property $time $effect;
+}
+
+@mixin appearance($appearance){
+    -webkit-appearance: $appearance;
+    -o-appearance: $appearance;
+    -moz-appearance: $appearance;
+    appearance: $appearance;
+}
+
+@mixin line($width, $mbot, $mtop){
+    border-top: 1px solid $lightblue;
+    -webkit-transform:rotate(90deg);
+    width: $width;
+    margin-bottom: $mbot;
+    margin-top: $mtop;
+    z-index: -1;
+}
+
+@mixin nav($m-top, $textcolor, $url, $inputcolor){
+    @extend %nav;
+    margin-top: $m-top;  
+    a{
+        color: $textcolor;
+        &:hover{
+            color: $lightblue;
+        }
+    }
+    #m-logo{
+        background-image: $url;
+    }
+    .m-nav-items{
+        &:hover{
+            color: $textcolor;
+        }
+        &:after{
+            background: $lightblue;
+        }
+    }
+    .input-group{
+        border: 1px solid $textcolor; 
+        ::placeholder{
+            color: $inputcolor;
+            opacity: 0.5;
+        }
+        .search-bar{    
+            color: $inputcolor;
+            opacity: 0.5;
+        }
+    }
+}
+
+@mixin nav-bg($url){
+    @extend %nav-bg;
+    background-image: $url;   
+}
+
+@mixin products($m-top){
+    @extend %products;
+    margin-top: $m-top;  
+}
+
+@mixin cta($textcolor, $hovercolor, $m-top:0){   
+    @extend %cta;
+    color: $textcolor;
+    border: 1px solid $textcolor;
+    margin-top: $m-top;
+    &:hover{
+        color: $hovercolor;   
+    }
+}
+
+@mixin cart($url, $size){
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-size: $size;
+    &:hover{
+        background-image: url("../images/shopping-cart-blue.svg"); 
+    }
+}
+
+@mixin nav-active($color){
+    @extend %m-nav-active;
+    &:after{
+        border-bottom: 2px solid $color;
+    }
+    &:hover{
+        color: $color;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+

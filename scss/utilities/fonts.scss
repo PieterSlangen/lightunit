@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'mixins';
+@import 'placeholder';
+
+@font-face{
+    font-family: lato-regular;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face{
+    font-family: lato-bold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face{
+    font-family: lato-black;
+    src: url("../fonts/Lato-Black.ttf");
+}
+
+@font-face{
+    font-family: lato-light;
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face{    
+    font-family: playfairdisplay-black;
+    src: url("../fonts/PlayfairDisplay-Black.otf")
+}
+
+h1{    
+    @include fonts(playfairdisplay-black, 2.786em, 1.500em);
+}
+
+h2{    
+    @include fonts(playfairdisplay-black, 2.143em, 1.100em);
+}
+
+h3{    
+    @include fonts(playfairdisplay-black, 2em, 1.500em);
+}
+
+h4{    
+    @include fonts(playfairdisplay-black, 1.125em, 1.188em);
+}
+
+h5{    
+    @include fonts(lato-black, 1.875em, 1.063em, uppercase);
+}
+
+h6{    
+    @include fonts(lato-black, 0.875em, 1.250em, uppercase);
+}
+
+p{
+    @include fonts(lato-regular, 1em, 1.429em);   
+}
+
+a{
+    color: $darkgrey;
+    @include transition(all, .1s, ease);
+    &:hover{
+        text-decoration: none;
+        color: $lightblue;
+        @include transition(all, .1s, ease);
+    }
+}
+
+.m-h-inline{
+    @include fonts(lato-bold, 1em, 1.429em); 
+}
+
+.blue-h{
+    color: $lightblue;  
+}
+
+.m-small{
+    @include fonts(lato-regular, 0.625em, 1em, none, center);
+}
+
+.m-date{
+    font-family: lato, sans-serif; 
+    font-size: 0.625em; 
+    opacity: 0.6;
+}
+
+@media(min-width:1400px){
+    h6{    
+        @include fonts(lato-black, 1em, 1.250em, uppercase);
+    }
+
+    p{
+        @include fonts(lato-regular, 1.143em, 1.429em);   
+    }  
+    
+    .m-date{
+        font-size: 0.875em; 
+    }
+    
+    .m-small{
+    @include fonts(lato-regular, 0.875em, 1em, none, center);
+}
+}
+
+@media(max-width:576px){
+    h1{    
+        @include fonts(playfairdisplay-black, 1.714em, 1.500em);
+    }
+
+    h2{    
+        @include fonts(playfairdisplay-black, 1.643em, 1.100em);
+    }
+
+    h3{    
+        @include fonts(playfairdisplay-black, 1.286em, 1.500em);
+    }
+
+    h4{    
+        @include fonts(playfairdisplay-black, 1.214em, 1.188em);
+    }
+
+    h5{    
+        @include fonts(lato-black, 1.429em, 1.063em, uppercase);
+    }
+
+    h6{    
+        @include fonts(lato-black, 0.929em, 1.250em, uppercase);
+    }   
+}

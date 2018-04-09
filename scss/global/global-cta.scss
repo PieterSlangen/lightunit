@@ -1,0 +1,53 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.cta-dark{
+    @include cta($darkgrey, $lightblue, 1em);
+}
+
+.cta-white{
+    @include cta($white, $lightblue); 
+}
+
+.cta-white2{
+    @include cta($white, $darkgrey);
+}
+
+.cta-inline{
+    line-height: 1.250em;
+    color: $lightblue;
+    cursor: pointer;
+    @extend %hover;
+}
+
+.cta-no-border{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cta-blue{
+    text-transform: uppercase;
+    color: $lightblue;
+    font-weight: 700;
+    &:hover{ 
+        color: $darkblue;
+    }
+}
+
+.cta-blog{
+    background-color: $darkgrey;
+    color: white;
+    padding: 0.3em;
+    margin-top: 1em;
+}
+
+.cta-arrow{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+
+

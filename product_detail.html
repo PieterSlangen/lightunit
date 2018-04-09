@@ -4,84 +4,303 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lightunit e-shop</title>
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar justify-content-around nav-dark">
-                <div class="row align-items-end">
-                    <div class="col-1">
-                        <a href="#" id="logo-dark">logo</a>
-                    </div>
-                    <a class="menu-dark" href="#"><img src="images/menu.png" alt="menu"></a>
-                    <div class="col-8">
-                        <a class="nav-items-dark" href="#">Producten<img class="icon-nav" src="images/arrow-dark.png" alt="arrow"></a>
-                        <a class="nav-items-dark" href="#">Ruimtes</a>
-                        <a class="nav-items-dark" href="#">Merken</a>
-                        <a class="nav-items-dark" href="#">Inspiratie</a>
-                        <a class="nav-items-dark" href="#">Advies<img class="icon-nav" src="images/arrow-dark.png" alt="arrow"></a>
-                        <a class="nav-items-dark" href="#">Contact</a>
-                    </div>
-                    <div class="col-3">
-                        <form class="form-inline" action="">
-                            <div class="input-group-dark">
-                                <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
-                                <button type="submit"><img class="search-icon input-group-text" src="images/search-icon-dark.png" alt="search-icon"></button>   
-                            </div>
-                        </form>
-                        <div class="row justify-content-around align-items-end cart-dark">
-                            <a href="#">€0,00</a>
-                            <a href="#" class="small-nav-dark">0 items</a>
-                            <a href="#"><img id="shopping-cart-dark" src="images/shopping-cart-dark.png" alt="shopping-cart"></a>  
+        <nav class="l-nav-dark container">
+            <div class="row align-items-end justify-content-between">
+                <div class="col-1">
+                    <a href="index.html" id="m-logo">logo</a>
+                </div>
+                <a class="m-menu offset-9 col-2 d-block d-md-none" href="#"><img src="images/menu-dark.svg" alt="menu"></a>
+                <div class="col-lg-8 col-md-6 d-none d-md-block">
+                    <a class="m-nav-active" href="product_overzicht.html">Producten<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="ruimtes.html">Ruimtes</a>
+                    <a class="m-nav-items" href="merken.html">Merken</a>
+                    <a class="m-nav-items" href="inspiratie.html">Inspiratie</a>
+                    <a class="m-nav-items" href="lichtadvies.html">Advies<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="contact.html">Contact</a>
+                </div>
+                <div class="col-3 d-none d-md-block">
+                    <form class="form-inline" action="">
+                        <div class="input-group col-12">
+                            <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
+                            <button class="search-button" type="submit"><img class="search-icon input-group-text" src="images/search-icon-dark.svg" alt="search-icon"></button>   
+                        </div>
+                    </form>
+                    <div class="d-none d-md-block">
+                        <div class="row justify-content-around align-items-end l-cart-dark">
+                            <a href="cart.html">€0,00</a>
+                            <a href="cart.html" class="m-small-nav">0 items</a>
+                            <a href="cart.html" id="m-shopping-cart-dark"></a>  
                         </div>
                     </div>
-                    <hr class="nav-line">
                 </div>
-            </nav>
+                <hr class="nav-line">
+            </div>
+        </nav>
             
-            <nav class="container" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Verlichting</a></li>
-                    <li class="breadcrumb-item"><a href="#">Binnenverlichting</a></li>
-                    <li class="breadcrumb-item"><a href="#">Plafondlampen</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</li>
-                </ol>
-            </nav>
+        <div class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb row mx-auto">
+                <li class="breadcrumb-item d-none d-lg-block"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item d-none d-lg-block"><a href="product_overzicht.html">Verlichting</a></li>
+                <li class="breadcrumb-item d-none d-lg-block"><a href="product_overzicht.html">Binnenverlichting</a></li>
+                <li class="breadcrumb-item active" aria-current="page">TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</li>
+            </ol>
+        </div>
             
-            <div class="container">
-                <div>
-                    <h2>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</h2>
-                    <img src="images/product1.png" alt="product1">
-                    <img src="images/zoom.png" alt="zoom">
+            
+            <div class="l-bg-product mw-100"></div>
+            <div class="container l-product-focus">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="m-img-zoom offset-xl-1 col-xl-11 col-lg-12 offset-md-0 col-md-12 offset-sm-2 col-sm-8 offset-1 col-11">
+                            <img class="m-focus-img" src="images/product1.png" alt="product1">
+                            <img class="m-zoom" src="images/zoom.svg" alt="zoom">
+                        </div>
+                        <hr class="m-product-hr mx-auto">
+                        <div class="row justify-content-around align-items-center">
+                            <a href="#"><img src="images/arrow-blue.svg" alt="arrow"></a>
+                            <a href="#" class="m-small-img"><img src="images/product1.png" alt="tendo1"></a>
+                            <a href="#" class="m-small-img"><img src="images/tendo1.png" alt="tendo2"></a>
+                            <a href="#" class="m-small-img d-none d-lg-block"><img src="images/tendo2.png" alt="tendo3"></a>
+                            <a href="#" class="m-small-img d-none d-lg-block"><img src="images/tendo3.png" alt="tendo4"></a>
+                            <a href="#"><img src="images/arrow-blue-right.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 m-focus-info">
+                        <h2>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</h2>
+                        <div class="l-info-price">
+                            <h5>€21,95</h5>
+                            <p>Incl BTW</p>
+                        </div>
+                        <div class="m-form-cart">
+                            <form action="">
+                                <input class="m-input-shop" type="text" placeholder="1">
+                                <button type="submit" class="cta-shop">Toevoegen aan winkelmandje<img src="images/shopping-cart-dark.svg" alt="shopping-cart"></button>
+                            </form>
+                        </div>
+                        <div class="l-info-detail">
+                            <p>Maximale levertijd 1 week<br><br>Artikelcode: LUCIDE 071061831<br>Categorie: <a href="product_overzicht.html">Plafondlampen</a></p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <hr class="l-short-line">
+            
+            <div class="l-info container">
+                <div class="row">
+                    <h6 class="m-tab-item"><a href="#">Technische specificaties</a></h6>
+                    <h6 class="m-tab-item"><a href="#">Omschrijving</a></h6>
                 </div>
-                <div>
-                    <a href="#"><img src="images/arrow-blue.png" alt="arrow"></a>
-                    <a href="#"><img src="images/gerelateerd1.png" alt="gerelateerd1"></a>
-                    <a href="#"><img src="images/gerelateerd2.png" alt="gerelateerd2"></a>
-                    <a href="#"><img src="images/gerelateerd3.png" alt="gerelateerd3"></a>
-                    <a href="#"><img src="images/gerelateerd4.png" alt="gerelateerd4"></a>
-                    <a href="#"><img src="images/gerelateerd5.png" alt="gerelateerd5"></a>
-                    <a href="#"><img src="images/arrow-blue-right.png" alt="arrow"></a>
+                <div class="row justify-content-between">
+                    <div class="l-scrollbox col-lg-6 col-md-6 col-sm-12">
+                        <p>
+                        <span class="m-h-inline">Richt uw huis in met licht</span><br>
+                        Deze eenvoudige Philips myLiving Velour-wand- en plafondlamp is gemaakt van natuurlijk textiel en Creert een rustgevende sfeer in uw woonruimte.                               Perfect om bij te lezen, te ontspannen of even lekker weg te dromen.<br><br>
+                        <span class="m-h-inline">Duurzame verlichting</span><br>
+                        <span class="m-h-inline">Energiezuinig</span><br>
+                        Deze energiebesparende Philips-lamp verbruikt minder stroom dan traditionele lichtbronnen. Zo bespaart u op uw energierekening en draagt u bij aan een                         beter milieu.<br><br>
+                        <span class="m-h-inline">Altijd inclusief een Philips-lamp</span><br>
+                        Hoogwaardige en energiezuinige Philips EcoLamp-lampen worden meegeleverd voor het beste lichteffect.<br><br>
+                        <span class="m-h-inline">Warm wit licht</span><br>
+                        Licht kan verschillende kleurtemperaturen hebben, die worden aangegeven in de eenheid Kelvin (K). Lampen met een lage Kelvin-waarde produceren een                             warmer, gezelliger licht, terwijl lampen met een hoge Kelvin-waarde een koeler, meer energiek licht produceren. Deze lamp van Philips geeft warm wit                           licht voor een gezellige sfeer.<br><br>
+                        <span class="m-h-inline">Speciale kenmerken</span><br>
+                        <span class="m-h-inline">Wand- en plafondmontage</span><br>
+                        Monteer deze lamp als een wandlamp of plafondlamp, precies zoals u wilt.<br>
+                        </p>
+                    </div>
+                    <img class="col-lg-6 col-md-6" src="images/verlichting.jpg" alt="verlichting image">
                 </div>
             </div>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            
+            <div class="l-reviews container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h6>Reviews</h6>
+                        <form action="">
+                            <p>Je score</p>
+                            <div class="m-stars">
+                                <img src="images/star.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                            </div>
+                            <div class="input-group">
+                                <input class="col-5" type="text" placeholder="naam">
+                                <div class="col-2"></div>
+                                <input class="col-5" type="email" placeholder="email"> 
+                            </div>
+                            <input class="col-12" type="textarea" placeholder="bericht">
+                            <button class="cta-dark" type="submit">Versturen</button>
+                        </form>
+                    </div>
+                    <div class="l-review-article col-lg-6 col-md-6 col-sm-12">
+                        <div>
+                            <p class="m-h-inline">Naam voornaam - 18/07/2018</p>
+                            <div class="stars">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                            </div>
+                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo                             risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <hr> 
+                        </div>
+                        <div>
+                            <p class="m-h-inline">Naam voornaam - 18/07/2018</p>
+                            <div class="m-stars">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                            </div>
+                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo                             risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <hr> 
+                        </div>
+                        <div>
+                            <p class="m-h-inline">Naam voornaam - 18/07/2018</p>
+                            <div class="m-stars">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                            </div>
+                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo                             risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <hr> 
+                        </div>
+                        <div>
+                            <p class="m-h-inline">Naam voornaam - 18/07/2018</p>
+                            <div class="m-stars">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star-blue.svg" alt="star">
+                                <img src="images/star.svg" alt="star">
+                            </div>
+                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo                             risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <hr> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="l-short-line">
+            
+            <div class="l-highlight-products-detail container">
+                <h2>Gerelateerde producten</h2>
+                <div class="l-products row">
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                <p class="m-small">€21,95 Incl BTW</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product2-resize.png" alt="product2">
+                                <p>APPLE LED BULB – Filament lamp</p>
+                                <p class="m-small">€8,95 Incl BTW</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product3-resize.png" alt="product3">
+                                <p>ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
+                                <p class="m-small">€52,50 Incl BTW</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product4-resize.png" alt="product4">
+                                <p>ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
+                                <p class="m-small">€18,50 Incl BTW</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product5-resize.png" alt="product5">
+                                <p>CHAIR OMG LL BROWN</p>
+                                <p class="m-small">€169,00 Incl BTW</p>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                        <div class="m-bg-item">
+                            <a href="product_detail.html">
+                                <img class="mx-auto" src="images/product6-resize.png" alt="product6">
+                                <p>STAR bar/tube white 2×4.5W SELV</p>
+                                <p class="m-small">€48,71 Incl BTW</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <a href="product_overzicht.html" class="cta-dark mx-auto">Meer producten</a>  
+                </div>
+            </div>
+            
+        <div class="mw-100 l-background-footer-product"></div>
+        <footer class="container l-footer-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Light unit bvba</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Naamsesteenweg 158 3001 Heverlee</p>
+                    <p>Openingsuren winkel:<br>di-vr van 10:00 tot 18:00<br>za van 11:00 tot 17:00</p>
+                    <p>Btw-nummer: BE0453.774.017 IBAN BE95 4286 1350 8158 BIC KREDBEBB</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12"> 
+                    <h6>Klantendienst</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Spreek met een van onze medewerkers op <a href="contact.html" class="cta-inline">+32 16 22 41 41</a> of stuur een bericht via onze <a href="contact.html" class="cta-inline">contactpagina</a>.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Algemene info</h6>
+                    <hr class="l-short-footer-line">
+                    <a class="cta-inline" href="retourneren.html">Retourneren</a><br>
+                    <a class="cta-inline" href="retourneren.html">Bezorgen en afhalen</a><br>
+                    <a class="cta-inline" href="retourneren.html">Beschadigd artikelen ontvangen?</a><br><br>
+                    <a class="cta-inline" href="retourneren.html">Alles over onze service</a><br><br>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Gratis verzending(BE/NL)</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Gratis levering vanaf €100! Bij bestelling voor 12u00 worden stockartikelen de volgende dag geleverd (in België).</p>
+                </div>
+            </div>
+            <hr class="l-long-footer-line">
+            <div>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                    <p>© 2018 Light Unit BVBA - Alle rechten voorbehouden</p>
+                </div>
+                <div class="row">
+                    <p class="col-lg-8 col-md-8 col-sm-8 col-12">Algemene voorwaarden • Cookie policy • Privacy statement • Disclaimer</p>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <a href="#"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
+                        <a href="#"><img src="images/pinterest-icon.svg" alt="pinterest icon"></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>  
 </body>
 </html>

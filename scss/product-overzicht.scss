@@ -1,0 +1,35 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.m-page-tabs a{
+    background-color: $offwhite;
+    padding: 0.714em;
+}
+
+.m-active-blue{
+    color: $lightblue;   
+}
+
+.m-list-active a{
+    color: $lightblue;
+}
+
+.m-filter-icon{
+    width: 2.857em;
+    height: 2.857em;
+    cursor: pointer;
+}
+
+.m-arrow-filter{
+    background-image: url("../images/arrow-dark.svg"); 
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+    background-size: 8%;
+    background-color: transparent; 
+    &:hover{
+        background-image: url("../images/arrow-blue-down.svg");
+    }
+    
+}

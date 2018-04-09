@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="blog-focus-copy-9" transform="translate(-338.000000, -3154.000000)" stroke="#FFFFFF">
+            <g id="arrow-white" transform="translate(343.500000, 3157.500000) rotate(90.000000) translate(-343.500000, -3157.500000) translate(340.000000, 3152.000000)">
+                <path d="M3.5,0.5 L3.5,10.5" id="Line"></path>
+                <path d="M6.5,10.5 L3.5,7.5" id="Line-2-Copy" transform="translate(5.000000, 9.000000) scale(-1, 1) translate(-5.000000, -9.000000) "></path>
+                <path d="M3.5,10.5 L0.5,7.5" id="Line-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

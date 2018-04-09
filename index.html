@@ -1,321 +1,337 @@
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lightunit e-shop</title>
-  </head>
-  <body>
-      <div class="container-fluid">
-        <div class="mw-100" id="background">
-            <nav class="navbar justify-content-around">
-                <div class="row align-items-end">
-                    <div class="col-1">
-                        <a href="#" id="logo">logo</a>
-                    </div>
-                    <a class="menu" href="#"><img src="images/menu.png" alt="menu"></a>
-                    <div class="col-8">
-                        <a class="nav-items" href="#">Producten<img class="icon-nav" src="images/arrow-white.png" alt="arrow"></a>
-                        <a class="nav-items" href="#">Ruimtes</a>
-                        <a class="nav-items" href="#">Merken</a>
-                        <a class="nav-items" href="#">Inspiratie</a>
-                        <a class="nav-items" href="#">Advies<img class="icon-nav" src="images/arrow-white.png" alt="arrow"></a>
-                        <a class="nav-items" href="#">Contact</a>
-                    </div>
-                    <div class="col-3">
-                        <form class="form-inline" action="">
-                            <div class="input-group">
-                                <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
-                                <button type="submit"><img class="search-icon input-group-text" src="images/search-icon.png" alt="search-icon"></button>   
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="mw-100" id="l-nav-background"></div>
+                <nav class="l-nav-home container">
+                    <div class="row align-items-end justify-content-between">
+                        <div class="col-1">
+                            <a href="index.html" id="m-logo">logo</a>
+                        </div>
+                        <a class="m-menu offset-9 col-2 d-block d-md-none" href="#"><img src="images/menu.svg" alt="menu"></a>
+                        <div class="col-lg-8 col-md-6 d-none d-md-block">
+                            <a class="m-nav-items" href="product_overzicht.html">Producten<img class="m-arrow-down" src="images/arrow-white.svg" alt="arrow"></a>
+                            <a class="m-nav-items" href="ruimtes.html">Ruimtes</a>
+                            <a class="m-nav-items" href="merken.html">Merken</a>
+                            <a class="m-nav-items" href="inspiratie.html">Inspiratie</a>
+                            <a class="m-nav-items" href="lichtstudie.html">Advies<img class="m-arrow-down" src="images/arrow-white.svg" alt="arrow"></a>
+                            <a class="m-nav-items" href="contact.html">Contact</a>
+                        </div>
+                        <div class="col-3 d-none d-md-block">
+                            <form class="form-inline" action="">
+                                <div class="input-group col-12">
+                                    <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
+                                    <button class="search-button"><img class="search-icon input-group-text" src="images/search-icon.svg" alt="search-icon"></button>   
+                                </div>
+                            </form>
+                            <div class="d-none d-md-block">
+                                <div class="row justify-content-around align-items-end l-cart-dark">
+                                    <a href="cart.html">€0,00</a>
+                                    <a href="cart.html" class="m-small-nav">0 items</a>
+                                    <a href="cart.html" id="m-shopping-cart"></a>  
+                                </div>
                             </div>
-                        </form>
-                        <div class="row justify-content-around align-items-end cart">
-                            <a href="#">€0,00</a>
-                            <a href="#" class="small-nav">0 items</a>
-                            <a href="#"><img id="shopping-cart" src="images/shopping-cart.png" alt="shopping-cart"></a>  
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav> 
           
-        <div id="hero">
-            <div class="row h-100 align-items-center">
-                <a class="col-1 arrow-blue1" href="#"><img src="images/arrow-blue.png" alt="arrow"></a>
-                <div class="col-10">
-                    <h2 class="mx-auto">10% korting op een<br>philips starterpack</h2>     
-                </div> 
-                <a class="col-1 arrow-blue2" href="#"><img src="images/arrow-blue-right.png" alt="arrow"></a>
-                <div class="row col-12">
-                    <a href="#" class="cta-white cta-hero mx-auto">Bekijk nu!</a>    
+                <div id="l-hero" class="container-fluid">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="row col-lg-12 l-hero-content">
+                            <a class="m-arrow-blue1" href="#"><img src="images/arrow-blue.svg" alt="arrow"></a>
+                            <h2 class="mx-auto">10% korting op een<br>philips starterpack</h2>     
+                            <a class="m-arrow-blue2" href="#"><img src="images/arrow-blue-right.svg" alt="arrow"></a>
+                            <div class="w-100"></div>
+                            <a href="#" class="cta-white mx-auto">Bekijk nu!</a>
+                        </div>  
+                    </div>
                 </div>
-            </div>
-        </div>
         
-        <div id="categories" class="row justify-content-around">
-           <h6>Categorieën<img class="icon-nav" src="images/arrow-white.png" alt="arrow"></h6>
-            <div class="col2 cat">
-                <h4 class="row">Binnenverlichting</h4>
-                <a href="#" class="row">Hanglampen</a>
-                <a href="#" class="row">Vloerlampen</a>
-                <a href="#" class="row">Smart lighting</a>
-            </div>
-              
-            <div class="col2 cat">
-                <h4 class="row">Buitenverlichting</h4>
-                <a href="#" class="row">Plafondlampen</a>
-                <a href="#" class="row">Wandlampen</a>
-                <a href="#" class="row">Vloerlampen</a>
-            </div>
-              
-            <div class="col2 cat">
-                <h4 class="row">Ruimtes</h4>
-                <a href="#" class="row">Woonkamer</a>
-                <a href="#" class="row">Keuken</a>
-                <a href="#" class="row">Slaapkamer</a>
-            </div> 
-              
-            <div class="col2 cat">
-                <h4 class="row">Woonaccesoires</h4>
-                <a href="#" class="row">Plaids</a>
-                <a href="#" class="row">Sierkussens</a>
-                <a href="#" class="row">Fotokaders</a>
-            </div>
-              
-            <div class="col2 cat">
-                <h4 class="row">Meubels</h4>
-                <a href="#" class="row">Tafels</a>
-                <a href="#" class="row">Stoelen</a>
-                <a href="#" class="row">Sofa's</a>
-            </div>
-        </div>
+                <div id="l-categories" class="row justify-content-around">
+                    <h6 class="d-block d-md-none">Categorieën<img class="m-arrow-down" src="images/arrow-white.svg" alt="arrow"></h6>
+                    <div class="col2 cat d-none d-md-block">
+                        <h4 class="row">Binnenverlichting</h4>
+                        <a href="product_overzicht.html" class="row">Hanglampen</a>
+                        <a href="product_overzicht.html" class="row">Vloerlampen</a>
+                        <a href="product_overzicht.html" class="row">Smart lighting</a>
+                    </div>
+                    <div class="col2 cat d-none d-md-block">
+                        <h4 class="row">Buitenverlichting</h4>
+                        <a href="product_overzicht.html" class="row">Plafondlampen</a>
+                        <a href="product_overzicht.html" class="row">Wandlampen</a>
+                        <a href="product_overzicht.html" class="row">Vloerlampen</a>
+                    </div>
+                    <div class="col2 cat d-none d-md-block">
+                        <h4 class="row">Ruimtes</h4>
+                        <a href="product_overzicht.html" class="row">Woonkamer</a>
+                        <a href="product_overzicht.html" class="row">Keuken</a>
+                        <a href="product_overzicht.html" class="row">Slaapkamer</a>
+                    </div> 
+                    <div class="col2 cat d-none d-md-block">
+                        <h4 class="row">Woonaccesoires</h4>
+                        <a href="product_overzicht.html" class="row">Plaids</a>
+                        <a href="product_overzicht.html" class="row">Sierkussens</a>
+                        <a href="product_overzicht.html" class="row">Fotokaders</a>
+                    </div>
+                    <div class="col2 cat d-none d-md-block">
+                        <h4 class="row">Meubels</h4>
+                        <a href="product_overzicht.html" class="row">Tafels</a>
+                        <a href="product_overzicht.html" class="row">Stoelen</a>
+                        <a href="product_overzicht.html" class="row">Sofa's</a>
+                    </div>
+                </div>
           
-        <div id="highlights" class="row no-gutters justify-content-center">
-            <div class="highlight-item item1 col4">
-                <h5>Bohemian</h5>
-                <a class="cta-no-border" href="#">Ontdek nu</a>
-            </div>
-            <div class="highlight-item item2 col4">
-                <h5>Verlichting</h5>
-                <a class="cta-no-border" href="#">Alles bekijken</a>
-            </div>
-            <div class="highlight-item item3">
-                <h5>Woonkamer</h5>
-                <a class="cta-no-border" href="#">Alles bekijken</a>
-            </div>
-        </div>
+                <div class="container l-highlighted">
+                    <div class="row no-gutters justify-content-center">
+                        <a class="m-overlay m-ruimtes-item m-highlight1 col-lg-4 col-md-6" href="product_overzicht.html">
+                            <h5>Woonkamer</h5>
+                        </a>
+                        <a class="m-overlay m-ruimtes-item m-highlight2 col-lg-4 col-md-6" href="product_overzicht.html">
+                            <h5>Tuin</h5>
+                        </a>
+                        <a class="m-overlay m-ruimtes-item m-highlight3 col-lg-4 col-md-6" href="product_overzicht.html">
+                            <h5>Keuken</h5>
+                        </a>
+                    </div>    
+                </div>
          
-        <hr class="long-line">   
-        </div>
+                <hr class="l-long-line"> 
           
-        <div class="highlight-products container">
-            <h2>Populaire producten</h2>
-                <div class="row justify-content-left">
-                    <div class="tab-item">
-                        <h6><a href="#">Binnenverlichting</a></h6>  
+                <div class="l-highlight-products-home container">
+                    <h2>Populaire producten</h2>
+                    <div class="row l-tabs justify-content-left">
+                        <div class="m-tab-item d-none d-md-block">
+                            <h6><a href="product_overzicht.html">Binnenverlichting</a></h6>  
+                        </div>
+                        <div class="m-tab-item d-none d-md-block">
+                            <h6><a href="product_overzicht.html">Buitenverlichting</a></h6>
+                        </div>
+                        <div class="m-tab-item d-none d-md-block">
+                           <h6><a href="product_overzicht.html">Ruimtes</a></h6>
+                        </div>
+                        <div class="m-tab-item d-none d-md-block">
+                           <h6><a href="product_overzicht.html">Woonaccesoires</a></h6>
+                        </div>
+                        <div class="m-tab-item d-none d-md-block">
+                            <h6><a href="product_overzicht.html">Meubels</a></h6>
+                        </div>
                     </div>
-                    <div class="tab-item">
-                        <h6><a href="#">Buitenverlichting</a></h6>
+                    <div class="l-products row">
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                    <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                    <p class="m-small">€21,95 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product2-resize.png" alt="product2">
+                                    <p>APPLE LED BULB – Filament lamp</p>
+                                    <p class="m-small">€8,95 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product3-resize.png" alt="product3">
+                                    <p>ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
+                                    <p class="m-small">€52,50 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product4-resize.png" alt="product4">
+                                    <p>ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
+                                    <p class="m-small">€18,50 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product5-resize.png" alt="product5">
+                                    <p>CHAIR OMG LL BROWN</p>
+                                    <p class="m-small">€169,00 Incl BTW</p>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product6-resize.png" alt="product6">
+                                    <p>STAR bar/tube white 2×4.5W SELV</p>
+                                    <p class="m-small">€48,71 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-item">
-                       <h6><a href="#">Ruimtes</a></h6>
-                    </div>
-                    <div class="tab-item">
-                       <h6><a href="#">Woonaccesoires</a></h6>
-                    </div>
-                    <div class="tab-item">
-                        <h6><a href="#">Meubels</a></h6>
+                    <div class="row align-items-center">
+                        <a href="product_overzicht.html" class="cta-dark mx-auto">Meer producten</a>  
                     </div>
                 </div>
-                <div class="products row">
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product1-resize.png" alt="product1">
-                            <p class="product-text">TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
-                            <p class="small">€21,95 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product2-resize.png" alt="product2">
-                            <p class="product-text">APPLE LED BULB – Filament lamp</p>
-                            <p class="small">€8,95 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product3-resize.png" alt="product3">
-                            <p class="product-text">ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
-                            <p class="small">€52,50 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product4-resize.png" alt="product4">
-                            <p class="product-text">ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
-                            <p class="small">€18,50 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product5-resize.png" alt="product5">
-                            <p class="product-text">CHAIR OMG LL BROWN</p>
-                            <p class="small">€169,00 Incl BTW</p>
-                        </a> 
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product6-resize.png" alt="product6">
-                            <p class="product-text">STAR bar/tube white 2×4.5W SELV</p>
-                            <p class="small">€48,71 Incl BTW</p>
-                        </a>
-                    </div>
-                </div>
-            <div class="row align-items-center">
-                <a href="#" class="cta-dark cta-products mx-auto">Meer producten</a>  
-            </div>
-        </div>
           
-        <hr class="short-line">
-         
-        <div class="highlight container">
-            <div class="row">
-                <div class="highlight-box">
-                    <h2>Gratis verzending <br>vanaf €100!</h2>
-                    <div class="row align-items-center">    
-                        <a href="#" class="cta-white2 mx-auto">Meer informatie</a>
+                <hr class="l-short-line">
+
+                <div class="l-background-highlight"></div> 
+                <div class="l-highlight container">
+                    <div class="row">
+                        <div class="m-highlight-box col-lg-6 col-md-6 col-sm-12 col-12">
+                            <h2>Gratis verzending <br>vanaf €100!</h2>
+                            <div class="row align-items-center">    
+                                <a href="#" class="cta-white2 mx-auto">Meer informatie</a>
+                            </div>
+                        </div>
+                        <img class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 col-sm-12 col-12" src="images/gezelligheid-resize.png" alt="verzending">
                     </div>
                 </div>
+
+                <hr class="l-short-line">
+          
+                <div class="l-highlight-products-home2 container">
+                    <h2>Nieuwe producten</h2>
+                    <div class="l-products row">
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                    <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                    <p class="m-small">€21,95 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product2-resize.png" alt="product2">
+                                    <p>APPLE LED BULB – Filament lamp</p>
+                                    <p class="m-small">€8,95 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product3-resize.png" alt="product3">
+                                    <p>ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
+                                    <p class="m-small">€52,50 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product4-resize.png" alt="product4">
+                                    <p>ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
+                                    <p class="m-small">€18,50 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product5-resize.png" alt="product5">
+                                    <p>CHAIR OMG LL BROWN</p>
+                                    <p class="m-small">€169,00 Incl BTW</p>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-6 m-product-item">
+                            <div class="m-bg-item">
+                                <a href="product_detail.html">
+                                    <img class="mx-auto" src="images/product6-resize.png" alt="product6">
+                                    <p>STAR bar/tube white 2×4.5W SELV</p>
+                                    <p class="m-small">€48,71 Incl BTW</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <a href="product_overzicht.html" class="cta-dark mx-auto">Meer producten</a>  
+                    </div>
+                </div>
+          
+                <hr class="l-short-line">
+          
+                <div class="l-merken container">
+                    <div class="col-sm-12 row h-100 mx-auto justify-content-around align-items-center">
+                        <h6>Onze merken</h6>
+                        <div class="col-sm-12 row justify-content-center">
+                            <a href="merk_focus.html"><img src="images/merk1.png" alt="merk1"></a>
+                            <a href="merk_focus.html"><img src="images/merk2.png" alt="merk2"></a>
+                            <a href="merk_focus.html"><img src="images/merk3.png" alt="merk3"></a>
+                            <a href="merk_focus.html"><img src="images/merk4.png" alt="merk4"></a>
+                            <a href="merk_focus.html"><img src="images/merk5.png" alt="merk5"></a>
+                            <a href="merk_focus.html"><img src="images/merk6.png" alt="merk6"></a>
+                            <a href="merk_focus.html"><img src="images/merk7.png" alt="merk7"></a>
+                            <a href="merk_focus.html"><img src="images/merk8.png" alt="merk8"></a>
+                            <a href="merk_focus.html"><img src="images/merk9.png" alt="merk9"></a>
+                            <a href="merk_focus.html"><img src="images/merk10.png" alt="merk10"></a>
+                            <a href="merk_focus.html"><img src="images/merk11.png" alt="merk11"></a>
+                        </div>
+                        <div class="row align-items-center">
+                            <a href="merken.html" class="cta-white mx-auto">Alle merken</a>  
+                        </div>   
+                    </div>
+                </div>
+          
+            <div class="mw-100 l-background-footer-home"></div>
+            <footer class="container l-footer-home">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <h6>Light unit bvba</h6>
+                        <hr class="l-short-footer-line">
+                        <p>Naamsesteenweg 158 3001 Heverlee</p>
+                        <p>Openingsuren winkel:<br>di-vr van 10:00 tot 18:00<br>za van 11:00 tot 17:00</p>
+                        <p>Btw-nummer: BE0453.774.017 IBAN BE95 4286 1350 8158 BIC KREDBEBB</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12"> 
+                        <h6>Klantendienst</h6>
+                        <hr class="l-short-footer-line">
+                        <p>Spreek met een van onze medewerkers op <a href="contact.html" class="cta-inline">+32 16 22 41 41</a> of stuur een bericht via onze <a href="contact.html" class="cta-inline">contactpagina</a>.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <h6>Algemene info</h6>
+                        <hr class="l-short-footer-line">
+                        <a class="cta-inline" href="retourneren.html">Retourneren</a><br>
+                        <a class="cta-inline" href="retourneren.html">Bezorgen en afhalen</a><br>
+                        <a class="cta-inline" href="retourneren.html">Beschadigd artikelen ontvangen?</a><br><br>
+                        <a class="cta-inline" href="retourneren.html">Alles over onze service</a><br><br>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <h6>Gratis verzending(BE/NL)</h6>
+                        <hr class="l-short-footer-line">
+                        <p>Gratis levering vanaf €100! Bij bestelling voor 12u00 worden stockartikelen de volgende dag geleverd (in België).</p>
+                    </div>
+                </div>
+                <hr class="l-long-footer-line">
                 <div>
-                    <img src="images/gezelligheid-resize.png" alt="verzending">
-                </div>
-            </div>
-        </div>
-         
-        <div class="background-highlight"></div> 
-         
-         <hr class="short-line">
-          
-          <div class="new-products container">
-            <h2>Nieuwe producten</h2>
-                <div class="products row">
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product1-resize.png" alt="product1">
-                            <p class="product-text">TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
-                            <p class="small">€21,95 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product2-resize.png" alt="product2">
-                            <p class="product-text">APPLE LED BULB – Filament lamp</p>
-                            <p class="small">€8,95 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product3-resize.png" alt="product3">
-                            <p class="product-text">ACRYLIC MAGNETIC FRAME 18 x 18 Clear</p>
-                            <p class="small">€52,50 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product4-resize.png" alt="product4">
-                            <p class="product-text">ACRYLIC MAGNETIC FRAME 10 x 10 Clear</p>
-                            <p class="small">€18,50 Incl BTW</p>
-                        </a>
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product5-resize.png" alt="product5">
-                            <p class="product-text">CHAIR OMG LL BROWN</p>
-                            <p class="small">€169,00 Incl BTW</p>
-                        </a> 
-                    </div>
-                    <div class="col product-item">
-                        <a href="#">
-                            <img src="images/product6-resize.png" alt="product6">
-                            <p class="product-text">STAR bar/tube white 2×4.5W SELV</p>
-                            <p class="small">€48,71 Incl BTW</p>
-                        </a>
-                    </div>
-                </div>
-            <div class="row align-items-center">
-                <a href="#" class="cta-dark cta-products mx-auto">Meer producten</a>  
-            </div>
-        </div>
-          
-          <hr class="short-line">
-          
-          <div class="merken container">
-            <div class="col-sm-12 row h-100 mx-auto justify-content-around align-items-center">
-                <h6>Onze merken</h6>
-                <div class="col-sm-12 row justify-content-center">
-                    <a href="#"><img src="images/merk1.png" alt="merk1"></a>
-                    <a href="#"><img src="images/merk2.png" alt="merk2"></a>
-                    <a href="#"><img src="images/merk3.png" alt="merk3"></a>
-                    <a href="#"><img src="images/merk4.png" alt="merk4"></a>
-                    <a href="#"><img src="images/merk5.png" alt="merk5"></a>
-                    <a href="#"><img src="images/merk6.png" alt="merk6"></a>
-                    <a href="#"><img src="images/merk7.png" alt="merk7"></a>
-                    <a href="#"><img src="images/merk8.png" alt="merk8"></a>
-                    <a href="#"><img src="images/merk9.png" alt="merk9"></a>
-                    <a href="#"><img src="images/merk10.png" alt="merk10"></a>
-                    <a href="#"><img src="images/merk11.png" alt="merk11"></a>
-                </div>
-                <div class="row align-items-center">
-                    <a href="#" class="cta-white cta-merken mx-auto">Alle merken</a>  
-                </div>   
-            </div>
-          </div>
-          
-          <div class="mw-100 background-footer"></div>
-            <footer>
-                 <div id="upper-footer" class="row">
-                     <div class="col">
-                      <h6>Light unit bvba</h2>
-                          <hr class="short-footer-line">
-                          <p>Naamsesteenweg 158 3001 Heverlee</p>
-                          <p>Openingsuren winkel:<br>di-vr van 10:00 tot 18:00<br>za van 11:00 tot 17:00</p>
-                          <p>Btw-nummer: BE0453.774.017 IBAN BE95 4286 1350 8158 BIC KREDBEBB</p>
-                      </div>
-                      <div class="col"> 
-                         <h6>Klantendienst</h2>
-                         <hr class="short-footer-line">
-                         <p>Spreek met een van onze medewerkers op <a href="#" class="cta-inline">+32 16 22 41 41</a> of stuur een bericht via onze <a href="#" class="cta-inline">contactpagina</a>.</p>
-                      </div>
-                       <div class="col">
-                         <h6>Algemene info</h2>
-                         <hr class="short-footer-line">
-                         <a class="cta-inline" href="#">Retourneren</a><br>
-                         <a class="cta-inline" href="#">Bezorgen en afhalen</a>
-                         <a class="cta-inline" href="#">Beschadigd artikelen ontvangen?</a><br><br>
-                         <a class="cta-inline" href="#">Alles over onze service</a>
-                      </div>
-                      <div class="col">
-                         <h6>Gratis verzending(BE/NL)</h2>
-                         <hr class="short-footer-line">
-                         <p>Gratis levering vanaf €100! Bij bestelling voor 12u00 worden stockartikelen de volgende dag geleverd (in België).</p>
-                      </div>
-                 </div>
-                 <hr class="long-footer-line">
-                 <div id="bottom-footer">
-                    <div class="row col-12">
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
                         <p>© 2018 Light Unit BVBA - Alle rechten voorbehouden </p>
                     </div>
                     <div class="row">
-                        <p class="col-10">Algemene voorwaarden • Cookie policy • Privacy statement • Disclaimer</p>
-                        <div class="col-2 justify-content-end">
-                            <a href="#"><img src="images/facebook-icon.png" alt="facebook icon"></a>
-                            <a href="#"><img src="images/pinterest-icon.png" alt="pinterest icon"></a>
-                            <a href="#"><img src="images/instagram-icon.png" alt="instagram icon"></a>
+                        <p class="col-lg-8 col-md-8 col-sm-8 col-12">Algemene voorwaarden • Cookie policy • Privacy statement • Disclaimer</p>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                            <a href="#"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
+                            <a href="#"><img src="images/pinterest-icon.svg" alt="pinterest icon"></a>
+                            <a href="#"><img src="images/instagram-icon.svg" alt="instagram icon"></a>
                         </div>
                     </div>
-                 </div>
-              </footer>
-      </div>
-  </body>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>

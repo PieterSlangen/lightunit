@@ -1,0 +1,105 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+body{
+    font: {
+        family: lato-regular;
+        size: 14px;
+    }
+    color: $darkgrey;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.m-arrow-down{
+    width: 1.071em;
+    height: 1.071em;
+}
+
+ul{
+    list-style: none;   
+}
+
+.no-padding{
+    padding-left: 0;   
+}
+
+nav{
+    position: relative;
+    z-index: 1; 
+}
+
+::-webkit-scrollbar {
+    width: 0.143em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: $lightblue; 
+    &:hover{    
+        background: $lightblue;
+    }
+}
+
+select{
+    padding-left: 0.357em;
+    padding-right: 0.357em;
+    width: 14.286em;
+    border: 1px solid $lightgrey;
+    border-radius: 0;
+    height: 1.786em;
+    font-weight: 400;
+    opacity: .8; 
+    background-image: url("../images/dropdown-arrow.svg"); 
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    background-color: transparent;
+    @include appearance(none);  
+}
+
+.m-arrow-list{
+    list-style-image: url("../images/arrow-dark.svg");
+}
+
+.l-long-line{
+    @include line(22.571em, 0em, -9.5em);   
+}
+
+.l-short-line{
+    @include line(2.857em, 4em, 4em);   
+}
+
+::placeholder{
+    color: $lightgrey;   
+}
+
+@media(max-width:992px){
+    .long-line{
+        @include line(42em, 0em, -19em);   
+    }
+}
+
+@media(max-width:768px){   
+    .m-top{
+        margin-top: 2.7em;   
+    }
+
+    .m-top-2{
+        margin-top: 4em;   
+    }     
+}
+
+
+
+

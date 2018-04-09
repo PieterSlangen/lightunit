@@ -1,0 +1,25 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-reviews{
+    .l-review-article{
+        background-color: $offwhite;
+        height: 21.875em;
+        overflow: auto;   
+    }
+    .m-stars{
+        margin-bottom: 1em;
+        margin-top: -1em;
+    }
+    input{
+        @extend %input;   
+    }
+}
+
+@media(max-width:768px){  
+    .l-review-article{
+        margin-top: 2em;   
+    }  
+}

@@ -1,0 +1,66 @@
+@import 'utilities/variables';
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/placeholder';
+
+.l-background-highlight{   
+    position: relative;
+    height: 10.286em;
+    background-color: $lightgrey;
+    margin-top: 18em;
+    margin-bottom: 13em;
+    z-index: -2;
+}
+
+.l-highlight{
+    margin-top: -38em;   
+    .m-highlight-box{
+        position: relative;
+        height: 20.286em;
+        background-color: $lightblue;
+        z-index: 1;
+    }
+    h2{
+        color: $white;  
+        text-align: center;
+        margin-top: 3em;
+    }
+    img{
+        position: relative;
+        height: 100%;
+        margin-top: -15em;
+        z-index: -1;
+        padding: 0;   
+    }
+}
+
+@media(max-width:992px){
+    .l-highlight{
+        margin-top: -30em;   
+    }
+    
+    .l-background-highlight{   
+        margin-top: 10em;
+    }
+}
+
+@media(max-width:768px){  
+    .l-highlight{
+        margin-top: -38em;
+        img{
+            margin-top: 0em;   
+        }
+    }
+    
+    .l-background-highlight{   
+        margin-top: 20em;
+    }  
+}
+
+@media(max-width:576px){
+    .l-highlight{
+        h2{    
+            margin-top: 4.5em;
+        }
+    }
+}

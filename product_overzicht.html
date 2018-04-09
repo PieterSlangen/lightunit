@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lightunit e-shop</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="l-nav-dark container">
+            <div class="row align-items-end justify-content-between">
+                <div class="col-1">
+                    <a href="index.html" id="m-logo">logo</a>
+                </div>
+                <a class="m-menu offset-9 col-2 d-block d-md-none" href="#"><img src="images/menu-dark.svg" alt="menu"></a>
+                <div class="col-lg-8 col-md-6 d-none d-md-block">
+                    <a class="m-nav-active" href="product_overzicht.html">Producten<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="ruimtes.html">Ruimtes</a>
+                    <a class="m-nav-items" href="merken.html">Merken</a>
+                    <a class="m-nav-items" href="inspiratie.html">Inspiratie</a>
+                    <a class="m-nav-items" href="lichtadvies.html">Advies<img class="m-arrow-down" src="images/arrow-dark.svg" alt="arrow"></a>
+                    <a class="m-nav-items" href="contact.html">Contact</a>
+                </div>
+                <div class="col-3 d-none d-md-block">
+                    <form class="form-inline" action="">
+                        <div class="input-group col-12">
+                            <input type="text" placeholder="Product zoeken..." name="search" class="search-bar form-control">
+                            <button class="search-button" type="submit"><img class="search-icon input-group-text" src="images/search-icon-dark.svg" alt="search-icon"></button>   
+                        </div>
+                    </form>
+                    <div class="d-none d-md-block">
+                        <div class="row justify-content-around align-items-end l-cart-dark">
+                            <a href="cart.html">€0,00</a>
+                            <a href="cart.html" class="m-small-nav">0 items</a>
+                            <a href="cart.html" id="m-shopping-cart-dark"></a>  
+                        </div>
+                    </div>
+                </div>
+                <hr class="nav-line">
+            </div>
+        </nav>
+            
+        <div class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb row mx-auto">
+                <li class="breadcrumb-item d-none d-lg-block"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item d-none d-lg-block"><a href="product_overzicht.html">Verlichting</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Binnenverlichting</li>
+            </ol>
+        </div>
+            
+            <div class="l-filters container">
+                <img class="d-sm-block d-lg-none m-filter-icon" src="images/filter-icon.svg" alt="filter">
+                <ul class="row no-padding">
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Merk</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Prijs</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Woonstijl</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Kleur</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Inbouw of opbouw</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Dimbaar</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Richtbaar</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Aansluitingen</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>IP Waarden</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Totaal lumen</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Lengte</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Hoogte</h6><hr></a></li>
+                    <li class="m-arrow-filter col-lg-3 col-md-4 d-none d-lg-block"><a href="#"><h6>Diameter</h6><hr></a></li>
+                </ul>
+            </div>
+            
+            <div class="l-overzicht container no-padding">
+                <div class="row justify-content-between mx-auto">
+                    <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                        <ul class="no-padding">
+                            <li class="m-arrow-filter"><a href="#"><h6>Categorieën</h6><hr></a></li>
+                            <ul class="m-arrow-list">
+                                <li><a href="#">Meubels</a></li>
+                                <li class="m-list-active"><a href="#">Verlichting</a></li>
+                                <ul class="m-arrow-list"> 
+                                    <li class="m-list-active"><a href="#">Binnenverlichting</a></li>
+                                    <ul class="m-arrow-list">
+                                        <li><a href="#">Bureaulampen</a></li>
+                                        <li><a href="#">Hanglampen</a></li>
+                                        <li><a href="#">Kinderlampen</a></li>
+                                        <li><a href="#">Klemlampen</a></li>
+                                        <li><a href="#">Meubellampen</a></li>
+                                        <li><a href="#">Plafondlampen</a></li>
+                                        <li><a href="#">Smart lighting</a></li>
+                                        <li><a href="#">Spotjes</a></li>
+                                        <li><a href="#">Tafellampen</a></li>
+                                        <li><a href="#">Vloerlampen</a></li>
+                                        <li><a href="#">Wandlampen</a></li>
+                                    </ul>
+                                    <li><a href="#">Buitenverlichting</a></li>
+                                    <li><a href="#">Verlichtingsaccesoires</a></li>
+                                </ul>
+                                <li><a href="#">Woonaccesoires</a></li>
+                            </ul>
+                        </ul>   
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <h2>Binnenverlichting</h2>
+                        <div class="row justify-content-between">
+                            <form class="col-lg-4" action="">
+                                <select name="" id="">
+                                    <option value="">Sorteer op populariteit</option>
+                                    <option value="">Sorteer op rating</option>
+                                    <option value="">Sorteer op nieuwe items</option>
+                                    <option value="">Sorteer op prijs: laag naar hoog</option>
+                                    <option value="">Sorteer op prijs: hoog naar laag</option>
+                                </select>
+                            </form>
+                            <p class="col-lg-4">Toont 1-12 van 535 resultaten</p>
+                            <div class="col-lg-4 m-page-tabs">
+                                <a href="#" class="m-active-blue">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#"><img src="images/arrow-dark-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        
+                        <div class="row l-highlight-products-detail">
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div><div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-product-item">
+                                <div class="m-bg-item">
+                                    <a href="product_detail.html">
+                                        <img class="mx-auto" src="images/product1-resize.png" alt="product1">
+                                        <p>TENDO-LED – Plafonniere – LED – 1x18W 3000K – Wit</p>
+                                        <p class="m-small">€21,95 Incl BTW</p>
+                                    </a>
+                                </div>
+                            </div>  
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <p class="col-lg-8">Toont 1-12 van 535 resultaten</p>
+                        <div class="col-lg-4 m-page-tabs">
+                            <a href="#" class="m-active-blue">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#"><img src="images/arrow-dark-right.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="mw-100 l-background-footer-product"></div>
+        <footer class="container l-footer-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Light unit bvba</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Naamsesteenweg 158 3001 Heverlee</p>
+                    <p>Openingsuren winkel:<br>di-vr van 10:00 tot 18:00<br>za van 11:00 tot 17:00</p>
+                    <p>Btw-nummer: BE0453.774.017 IBAN BE95 4286 1350 8158 BIC KREDBEBB</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12"> 
+                    <h6>Klantendienst</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Spreek met een van onze medewerkers op <a href="contact.html" class="cta-inline">+32 16 22 41 41</a> of stuur een bericht via onze <a href="contact.html" class="cta-inline">contactpagina</a>.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Algemene info</h6>
+                    <hr class="l-short-footer-line">
+                    <a class="cta-inline" href="retourneren.html">Retourneren</a><br>
+                    <a class="cta-inline" href="retourneren.html">Bezorgen en afhalen</a><br>
+                    <a class="cta-inline" href="retourneren.html">Beschadigd artikelen ontvangen?</a><br><br>
+                    <a class="cta-inline" href="retourneren.html">Alles over onze service</a><br><br>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h6>Gratis verzending(BE/NL)</h6>
+                    <hr class="l-short-footer-line">
+                    <p>Gratis levering vanaf €100! Bij bestelling voor 12u00 worden stockartikelen de volgende dag geleverd (in België).</p>
+                </div>
+            </div>
+            <hr class="l-long-footer-line">
+            <div>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                    <p>© 2018 Light Unit BVBA - Alle rechten voorbehouden </p>
+                </div>
+                <div class="row">
+                    <p class="col-lg-8 col-md-8 col-sm-8 col-12">Algemene voorwaarden • Cookie policy • Privacy statement • Disclaimer</p>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <a href="#"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
+                        <a href="#"><img src="images/pinterest-icon.svg" alt="pinterest icon"></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>  
+</body>
+</html>
